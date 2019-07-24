@@ -3,32 +3,37 @@
 
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 
 <body>
-<h1 class="center">Password Checker</h1>
-<form class="center">
-    <label>Username:</label>
-    <input type="text" id="Username" name="username">
-    <br><br>
-    <label>Password:</label>
-    <input type="password" id="password" name="password"
-        pattern="(?=.*\d)(?=.*[\W_])(?=.*[a-z])(?=.*[A-Z]).{8,}"
-        title="Must contain at least one number and one uppercase and lowercase letter, and one speical character, and at least 8 or more characters" required>
+<div class="container">
+    <h1 class="text-center">Password Checker</h1>
     <br>
+    <form class="center">
+        <label>Username:</label>
+        <input type="text" id="Username" name="username">
+        <br><br>
+        <label>Password:&nbsp;</label>
+        <input type="password" id="password" name="password"
+            pattern="(?=.*\d)(?=.*[\W_])(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must contain at least one number and one uppercase and lowercase letter, and one speical character, and at least 8 or more characters" required>
+        <br>
+        <br>
+        <button type="submit" class="btn btn-dark">Submit</button>
+    </form>
     <br>
-    <input type="submit" value="Submit">
-</form>
-<div id="message" class="center">
-    <h3>Password must contain the following:</h3>
-    <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
-    <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
-    <p id="number" class="invalid">A <b>number</b></p>
-    <p id="special" class="invalid">A <b>special character</b></p>
-    <p id="length" class="invalid">Minimum <b>8 characters</b></p>
-  </div>
-
+    <div id="message" class="border center">
+        <h3>Password must contain the following:</h3>
+        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+        <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+        <p id="number" class="invalid">A <b>number</b></p>
+        <p id="special" class="invalid">A <b>special character</b></p>
+        <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+    </div>
+</div>
   <script src="./checker.js"></script>
 </body>
 
