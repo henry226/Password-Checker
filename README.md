@@ -8,20 +8,17 @@
 
 ---
 
-### If nothing match
+## If nothing match
 ![All Error](./images/img1.png)
 
----
 
-### If something match
+## If something match
 ![All Error](./images/img2.png)
 
----
 
-### If submit but not all match
+## If submit but not all match
 ![All Error](./images/img3.png)
 
----
 
-### If all match
+## If all match
 ![All Error](./images/img4.png)
