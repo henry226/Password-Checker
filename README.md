@@ -8,4 +8,4 @@
 
 ---
 
-![All Error](./images/allError)
+![All Error](./images/allError.png)
